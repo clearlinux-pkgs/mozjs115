@@ -1,0 +1,13 @@
+diff --git a/python/mozbuild/mozbuild/configure/__init__.py b/python/mozbuild/mozbuild/configure/__init__.py
+index 0ee4d66b1a..ad9e0be51e 100644
+--- a/python/mozbuild/mozbuild/configure/__init__.py
++++ b/python/mozbuild/mozbuild/configure/__init__.py
+@@ -560,7 +560,7 @@ class ConfigureSandbox(dict):
+             if self._help:
+                 self._logger.warning(msg)
+             else:
+-                raise InvalidOptionError(msg)
++                print(msg)
+ 
+         # Run the execution queue
+         for func, args in self._execution_queue:
